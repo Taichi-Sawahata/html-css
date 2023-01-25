@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Bitter', serif;
+    line-height: 2;
+}
+
+#port {
+    background-image: url(images/bg-portfolio.jpg);
+    background-position: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    margin: 250px auto 0;
+   padding: 35px 4% 0;
+ background-color: #fff;
+ 
+}
+
+.wrapper {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+/*header*/
+#header {
+    width: 960px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header ul a:hover {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+
+
+
+#header .site-title {
+    width: 245px;
+    margin-top: 50px;
+  
+}
+
+
+#header  ul {
+    display: flex;
+    margin-top: 60px;
+    
+}
+
+#header li {
+    list-style: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#header a {
+    color: #fff;
+}
+
+/*main*/
+
+#section {
+    width: 700px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+#section img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+#section .section-title{
+    font-weight: bold;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    font-size: 36px;
+
+}
+
+#section p {
+    margin: 30px 0;
+}
+
+#section .pf {
+    margin: 20px 0 40px 0;
+}
+
+/*#aside*/
+
+#aside {
+    width: 200px;
+    margin: 0 10px 0 30px;
+    
+}
+ #aside ul {
+    padding-left: 25px;
+ }
+
+#aside li {
+    list-style-type: square ;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+#aside .aside-title {
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: left;
+}
+#aside .item {
+    font-weight: normal;
+}
+
+#aside a:hover {
+    border-bottom: 1px solid #333;
+
+}
+
+/*footer*/
+
+#footer {
+    background-color: #888888;
+    height: 50px; 
+
+}
+
+#footer p {
+    text-align: center;
+   line-height: 50px;
+   color: #fff;
+   font-size: 10px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  #header , .wrapper{
+   flex-direction: column;
+  }
+  #section img {
+    width: 100%;
+  }
+ 
+
+}

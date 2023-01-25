@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Bitter', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content {
+    margin: 20px auto;
+   display: flex;
+   padding: 0 4%;
+   width: 100%;
+
+}
+
+
+/*header*/
+#header {
+    width: 100%;
+}
+
+#header .mainvisual {
+    position: relative;
+    width: 100%;
+   height: 300px;
+}
+
+#header .site-title {
+    width: 200px;
+}
+
+#header .title-text {
+    width: 100%;
+   position: absolute;
+   top: 20%;
+ 
+}
+
+#header .flex {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+#header  ul {
+    display: flex;
+}
+
+#header li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header a {
+    color: #fff;
+}
+
+/*main*/
+
+#section {
+    width: 70%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+#section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#section .section-title{
+    font-weight: bold;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    font-size: 25px;
+
+}
+
+#section p {
+    margin: 30px 0;
+}
+
+#section .pf {
+    margin: 20px 0 40px 0;
+}
+
+/*#aside*/
+
+#aside {
+    width: 30%;
+    
+}
+ #aside ul {
+    padding-left: 25px;
+ }
+
+#aside li {
+    list-style-type: square ;
+    margin-top: 10px;
+}
+
+#aside .aside-title {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*footer*/
+
+#footer {
+    background-color: #888888;
+    height: 50px; 
+
+}
+
+#footer p {
+    text-align: center;
+   line-height: 50px;
+   color: #fff;
+   font-size: 10px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+      .content {
+        flex-direction: column;
+      }
+      #section {
+        margin: 0 auto;
+      }
+      #section img {
+        width: 100%;
+      }
+      #aside {
+        margin: 0 auto;
+      }
+}
